@@ -1,0 +1,34 @@
+❯ racket                                                                                                             ─╯
+Welcome to Racket v8.11 [cs].
+> (define (fizzbuzz n)
+    (if (= (modulo n 15) 0)
+        "fizzbuzz"
+        (if (= (modulo n 3) 0)
+            "fizz"
+            (if (= (modulo n 5) 0)
+                "buzz"
+                n))))
+> (fizzbuzz 15)
+"fizzbuzz"
+> (fizzbuzz 6)
+"fizz"
+> (fizzbuzz 10)
+"buzz"
+> (fizzbuzz 5)
+"buzz"
+> (fizzbuzz 3)
+"fizz"
+> (fizzbuzz 2)
+2
+> (fizzbuzz 16)
+16
+> (fizzbuzz 0)
+"fizzbuzz"
+> (fizzbuzz -5)
+"buzz"
+> (fizzbuzz h)
+h: undefined;
+ cannot reference an identifier before its definition
+  in module: top-level
+ [,bt for context]
+>
