@@ -1,0 +1,14 @@
+Welcome to Racket v8.11 [cs].
+> (define (reverse_list list)
+    (if (null? list) list
+      (append (reverse_list (cdr list))
+            (cons (car list) '()))))
+> (reverse_list '(1 2 3 4))
+'(4 3 2 1)
+> (reverse_list '(1 2))
+'(2 1)
+> (reverse_list '(1))
+'(1)
+> (reverse_list '())
+'()
+>
