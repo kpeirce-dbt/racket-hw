@@ -1,0 +1,15 @@
+Welcome to Racket v8.11 [cs].
+> (define ((scaleby input) multiplier)
+    (* input multiplier))
+> ((scaleby 1) 2)
+2
+> ((scaleby 2) 0)
+0
+> ((scaleby 3) 5)
+15
+> ((scaleby 10) 10)
+100
+> ((scaleby 10) -10)
+-100
+> ((scaleby 10) 10.0)
+100.0
